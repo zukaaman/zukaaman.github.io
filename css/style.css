@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  color: #3a494c;
+
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  min-width: 900px;
+  margin: 0 auto;
+  padding: 0 2.3%;
+}
+
+.main-header {
+}
+
+.main-navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-header-logo {
+  width: 50%;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-navigation li {
+
+}
+
+.site-navigation a {
+  font-weight: 700;
+  color: #3a494c;
+}
+
+.first-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.about {
+  width: 50%;
+}
+
+.form {
+  width: 50%;
+}
+
+.me {
+  border-radius: 50%;
+}
+
+.portfolio {
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.portfolio-list li {
+  width: 300px;
+  height:200px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  background-color: grey;
+}
+
+.reviews {
+}
+
+.reviews-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.reviews-list li {
+  width: 200px;
+  height:300px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  background-color: grey;
+}
+
+.second-wrapper {
+  display: flex;
+  min-height: 500px;
+}
+
+.contacts {
+  width: 50%;
+}
+
