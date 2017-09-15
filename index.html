@@ -38,14 +38,16 @@
 
         <section class="my-foto">
           <h2 class="visually-hidden">Мое фото</h2>
-          <img class="me" src="img/foto.jpg" width="300" height="300" alt="Это я">
+            <img class="me" src="img/foto.jpg" width="300" height="300" alt="Это я">
         </section>
 
       </div>
 
       <section class="portfolio" id="portfolio">
         <h2>Последние работы</h2>
+
         <!-- filter -->
+
         <ul class="portfolio-list">
           <li class="portfolio-list-item">
             <div class="details">
@@ -141,7 +143,7 @@
             <h2 class="visually-hidden">Форма для связи со мной</h2>
 
             <h3>Я обязательно Вам отвечу!</h3>
-            <form class="main-form">
+            <form class="main-form" action="php/form.php" method="post">
               <p>
                 <label class="visually-hidden" for="name">Ваше имя?</label>
                 <input type="text" name="name" placeholder="Ваше имя?" required>

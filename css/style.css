@@ -58,7 +58,7 @@ input[type="checkbox"].visually-hidden {
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   width: 50%;
@@ -94,16 +94,18 @@ input[type="checkbox"].visually-hidden {
   transition: transform 0.3s;
 }
 
-.site-navigation a:hover::before {
+.site-navigation a:hover::before,
+.site-navigation a:focus::before {
   opacity: 1;
 
-  transform: translateX(-1em);
+  transform: translateX(-0.7em);
 }
 
-.site-navigation a:hover::after {
+.site-navigation a:hover::after,
+.site-navigation a:focus::after {
   opacity: 1;
 
-  transform: translateX(1em);
+  transform: translateX(0.7em);
 }
 
 .first-wrapper {
