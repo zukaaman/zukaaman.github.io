@@ -16,10 +16,10 @@
           <img src="img/logo.svg" width="234" height="75" alt="Логотип zukaadev">
         </a>
         <ul class="site-navigation">
-          <li><a href="index.html#portfolio">портфолио</a></li>
-          <li><a href="index.html#reviews">отзывы</a></li>
-          <li><a href="blog.html">блог</a></li>
-          <li><a href="index.html#contacts">контакты</a></li>
+          <li><a href="index.html#portfolio">Портфолио</a></li>
+          <li><a href="index.html#reviews">Отзывы</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="index.html#contacts">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -27,22 +27,34 @@
     <footer class="main-footer" id="contacts">
       <div class="container">
         <div class="footer-top">
-          <h2>Я обязательно Вам отвечу!</h2>
-          <form class="main-form">
-            <p>
-              <label class="visually-hidden" for="name">Ваше имя?</label>
-              <input type="text" name="name" placeholder="Ваше имя?">
-            </p>
-            <p>
-              <label class="visually-hidden" for="email">Ваша почта?</label>
-              <input id="email" type="email" name="email" placeholder="Ваша почта?">
-            </p>
-            <p>
-              <label class="visually-hidden" for="text">Ваша проблема</label>
-              <textarea id="text" name="text" placeholder="Опишите, пожалуйста, Вашу проблему..."></textarea>
-            </p>
-            <button class="button">заказать верстку!</button>
-          </form>
+
+          <section class="about">
+            <h2>Еще несколько слов</h2>
+
+            <p>Пишу чистый, семантичный и валидный код. Сверстанные мною сайты выглядят одинаково во всех современных браузерах. Нюансы верстки под версии IE обсуждаются отдельно.</p>
+
+            <p>Для связи со мной Вы можете использовать социальные сети, либо воспользоваться специальной формой для связи.</p>
+          </section>
+
+          <section class="form">
+            <h2>Я обязательно Вам отвечу!</h2>
+            <form class="main-form">
+              <p>
+                <label class="visually-hidden" for="name">Ваше имя?</label>
+                <input type="text" name="name" placeholder="Ваше имя?" required>
+              </p>
+              <p>
+                <label class="visually-hidden" for="email">Ваша почта?</label>
+                <input id="email" type="email" name="email" placeholder="Ваша почта?" required>
+              </p>
+              <p>
+                <label class="visually-hidden" for="text">Ваша проблема</label>
+                <textarea id="text" name="text" rows="4" placeholder="Опишите, пожалуйста, Вашу проблему..." required></textarea>
+              </p>
+              <button class="button" type="submit">Отправить</button>
+            </form>
+          </section>
+
         </div>
 
         <div class="footer-bottom">

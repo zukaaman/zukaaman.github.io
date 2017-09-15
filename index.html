@@ -28,7 +28,7 @@
 
       <div class="first-wrapper">
 
-        <section class="about">
+        <section class="greeting">
           <h2 class="visually-hidden">Обо мне</h2>
 
           <h3>Привет, меня зовут Константин и я верстаю сайты</h3>
@@ -61,26 +61,26 @@
         <ul class="reviews-list">
           <li>
             <article>
-              <img src="" alt="фото заказа">
+              <img src="img/foto.jpg" width="150" height="150" alt="фото заказа">
               <h1>имя заказчика</h1>
-              <h2>кто такой</h2>
-              <p>отзыв</p>
+              <h2>Кто такой</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est.</p>
             </article>
           </li>
           <li>
             <article>
-              <img src="" alt="фото заказа">
+              <img src="img/foto.jpg" width="150" height="150" alt="фото заказа">
               <h1>имя заказчика</h1>
-              <h2>кто такой</h2>
-              <p>отзыв</p>
+              <h2>Кто такой</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est.</p>
             </article>
           </li>
           <li>
             <article>
-              <img src="" alt="фото заказа">
+              <img src="img/foto.jpg" width="150" height="150" alt="фото заказа">
               <h1>имя заказчика</h1>
-              <h2>кто такой</h2>
-              <p>отзыв</p>
+              <h2>Кто такой</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est.</p>
             </article>
           </li>
         </ul>
@@ -92,22 +92,36 @@
     <footer class="main-footer" id="contacts">
       <div class="container">
         <div class="footer-top">
-          <h2>Я обязательно Вам отвечу!</h2>
-          <form class="main-form">
-            <p>
-              <label class="visually-hidden" for="name">Ваше имя?</label>
-              <input type="text" name="name" placeholder="Ваше имя?">
-            </p>
-            <p>
-              <label class="visually-hidden" for="email">Ваша почта?</label>
-              <input id="email" type="email" name="email" placeholder="Ваша почта?">
-            </p>
-            <p>
-              <label class="visually-hidden" for="text">Ваша проблема</label>
-              <textarea id="text" name="text" placeholder="Опишите, пожалуйста, Вашу проблему..."></textarea>
-            </p>
-            <button class="button">заказать верстку!</button>
-          </form>
+
+          <section class="about">
+            <h2>Еще несколько слов</h2>
+
+            <p>Пишу чистый, семантичный и валидный код. Сверстанные мною сайты выглядят одинаково во всех современных браузерах. Нюансы верстки под версии IE обсуждаются отдельно.</p>
+
+            <p>Для связи со мной Вы можете использовать социальные сети, либо воспользоваться специальной формой для связи.</p>
+          </section>
+
+          <section class="form">
+            <h2 class="visually-hidden">Форма для связи со мной</h2>
+
+            <h3>Я обязательно Вам отвечу!</h3>
+            <form class="main-form">
+              <p>
+                <label class="visually-hidden" for="name">Ваше имя?</label>
+                <input type="text" name="name" placeholder="Ваше имя?" required>
+              </p>
+              <p>
+                <label class="visually-hidden" for="email">Ваша почта?</label>
+                <input id="email" type="email" name="email" placeholder="Ваша почта?" required>
+              </p>
+              <p>
+                <label class="visually-hidden" for="text">Ваша проблема</label>
+                <textarea id="text" name="text" rows="4" placeholder="Опишите, пожалуйста, Вашу проблему..." required></textarea>
+              </p>
+              <button class="button" type="submit">Отправить</button>
+            </form>
+          </section>
+
         </div>
 
         <div class="footer-bottom">
