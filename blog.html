@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>zukaadev-blog</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
@@ -15,6 +16,7 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/logo.svg" width="234" height="75" alt="Логотип zukaadev">
         </a>
+        <div class="toggle"></div>
         <ul class="site-navigation">
           <li><a href="index.html#portfolio">Портфолио</a></li>
           <li><a href="index.html#reviews">Отзывы</a></li>
@@ -37,7 +39,9 @@
           </section>
 
           <section class="form">
-            <h2>Я обязательно Вам отвечу!</h2>
+            <h2 class="visually-hidden">Форма для связи со мной</h2>
+
+            <h3>Я обязательно Вам отвечу!</h3>
             <form class="main-form">
               <p>
                 <label class="visually-hidden" for="name">Ваше имя?</label>
