@@ -36,9 +36,23 @@ input[type="checkbox"].visually-hidden {
 .container {
   box-sizing: border-box;
   max-width: 1200px;
-  min-width: 900px;
+  min-width: 768px;
   margin: 0 auto;
-  padding: 0 2.3%;
+  padding: 0 2%;
+}
+
+@media (max-width: 768px){
+  .container {
+    max-width: 768px;
+    min-width: 426px;
+  }
+}
+
+@media (max-width: 425px){
+  .container {
+    max-width: 425px;
+    min-width: 0;
+  }
 }
 
 .main-header {
@@ -46,14 +60,73 @@ input[type="checkbox"].visually-hidden {
 }
 
 .main-navigation {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+/*@media (max-width: 768px){
+  .main-navigation {
+    flex-direction: column;
+  }
+}*/
+
 .main-header-logo {
-  width: 50%;
+  width: 234px;
 
   text-align: left;
+}
+
+.toggle {
+  display: none;
+
+  width: 35px;
+  height: 5px;
+  margin-top: 35px;
+
+  background-color: #3a494c;
+}
+
+.toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 25px;
+
+  width: 35px;
+  height: 5px;
+
+  background-color: #3a494c;
+}
+
+.toggle::after {
+  content: "";
+
+  position: absolute;
+  top: 45px;
+
+  width: 35px;
+  height: 5px;
+
+  background-color: #3a494c;
+}
+
+@media (max-width: 768px) {
+  .toggle {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 425px) {
+  .toggle {
+    display: inline-block;
+  }
+}
+
+.toggle:hover ~ .site-navigation {
+  display: flex;
 }
 
 .site-navigation {
@@ -61,11 +134,23 @@ input[type="checkbox"].visually-hidden {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 50%;
+  min-width: 50%;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+@media (max-width: 768px) {
+  .site-navigation {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .site-navigation {
+    display: none;
+  }
 }
 
 .site-navigation a {
@@ -113,13 +198,26 @@ input[type="checkbox"].visually-hidden {
   margin-bottom: 5em;
 }
 
+@media (max-width: 768px){
+  .first-wrapper {
+    flex-direction: column;
+  }
+}
+
 .greeting {
   box-sizing: border-box;
 
   width: 50%;
-  margin-right: 2em;
+  margin-right: 2%;
 
   text-align: center;
+}
+
+@media (max-width: 768px){
+  .greeting {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 .greeting h3 {
@@ -148,13 +246,27 @@ input[type="checkbox"].visually-hidden {
   text-align: center;
 }
 
+@media (max-width: 768px){
+  .my-foto {
+    width: 100%;
+  }
+}
+
 .me {
+  width: 80%;
+
   border-radius: 50%;
+}
+
+@media (max-width: 768px){
+  .me {
+    width: 60%;
+  }
 }
 
 .portfolio {
   padding-top: 3em;
-  margin-bottom: 5em;
+  margin-bottom: 3.5em;
 
   border-top: 1px solid #E0E0E0;
 }
@@ -178,23 +290,40 @@ input[type="checkbox"].visually-hidden {
   list-style: none;
 }
 
-.portfolio-list li {
+.portfolio-list-item {
   width: 32%;
   height:300px;
   margin-right: 2%;
   margin-bottom: 1.5em;
-}
 
-.portfolio-list li:nth-child(3n) {
-  margin-right: 0;
-}
-
-.portfolio-list-item {
   background-image: url("../img/gllacy.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 
   overflow: hidden;
+}
+
+@media (max-width: 768px){
+  .portfolio-list-item {
+    width: 49%;
+  }
+}
+
+@media (max-width: 425px){
+  .portfolio-list-item {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.portfolio-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .portfolio-list-item:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 .details {
@@ -254,30 +383,6 @@ input[type="checkbox"].visually-hidden {
   transform: translateX(0);
 }
 
-/*.portfolio-list-item a::before {
-  content: "";
-
-  position: absolute;
-
-  display: block;
-  width: 100%;
-  height: 300px;
-
-  opacity: 0;
-
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(-100%);
-}*/
-
-/*.portfolio-list-item a:hover::before {
-  z-index: 1;
-
-  opacity: 1;
-  background-color: rgba(39, 159, 124, 0.6);
-
-  transform: translateX(0);
-}*/
-
 .reviews {
   padding-top: 3em;
   margin-bottom: 5em;
@@ -304,19 +409,57 @@ input[type="checkbox"].visually-hidden {
   list-style: none;
 }
 
+@media (max-width: 768px) {
+  .reviews-list {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .reviews-list {
+    flex-direction: row;
+  }
+}
+
 .reviews-list li {
   width: 32%;
-  height:500px;
   margin-right: 2%;
 
   background-color: grey;
 }
 
+@media (max-width: 768px) {
+  .reviews-list li {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2em;
+  }
+}
+
 .reviews-list li:nth-child(3n) {
   margin-right: 0;
+  margin-bottom: 0;
 }
 
 .reviews-list article {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .reviews-list article {
+    display: flex;
+
+    text-align: left;
+  }
+}
+
+@media (max-width: 425px) {
+  .reviews-list article {
+    flex-direction: column;
+  }
+}
+
+.reviews-list .whois {
   text-align: center;
 }
 
@@ -361,6 +504,12 @@ input[type="checkbox"].visually-hidden {
   margin-bottom: 2em;
 }
 
+@media (max-width: 425px) {
+  .footer-top {
+    flex-direction: column;
+  }
+}
+
 .footer-top h2,
 .footer-top h3 {
   margin: 0;
@@ -376,7 +525,14 @@ input[type="checkbox"].visually-hidden {
   position: relative;
 
   width: 50%;
-  margin-right: 2em;
+  margin-right: 2%;
+}
+
+@media (max-width: 425px) {
+  .about {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 .about p {
@@ -391,6 +547,12 @@ input[type="checkbox"].visually-hidden {
   box-sizing: border-box;
 
   width: 50%;
+}
+
+@media (max-width: 425px) {
+  .form {
+    width: 100%;
+  }
 }
 
 .main-form input,
@@ -490,40 +652,3 @@ input[type="checkbox"].visually-hidden {
   font-size: 1.1em;
   color: #ffffff;
 }
-
-/*@media (max-width: 800px){
-  .first-wrapper {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 800px){
-  .greeting {
-    width: 100%;
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 800px){
-  .my-foto {
-    width: 100%;
-  }
-}
-
-@media (max-width: 800px){
-  .main-navigation {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 800px){
-  .portfolio-list li {
-    width: 49%;
-  }
-}
-
-@media (max-width: 800px) {
-  .portfolio-list li:nth-child(2n) {
-    margin-right: 0;
-  }
-}*/
