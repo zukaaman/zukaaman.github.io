@@ -490,3 +490,40 @@ input[type="checkbox"].visually-hidden {
   font-size: 1.1em;
   color: #ffffff;
 }
+
+/*@media (max-width: 800px){
+  .first-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px){
+  .greeting {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 800px){
+  .my-foto {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px){
+  .main-navigation {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px){
+  .portfolio-list li {
+    width: 49%;
+  }
+}
+
+@media (max-width: 800px) {
+  .portfolio-list li:nth-child(2n) {
+    margin-right: 0;
+  }
+}*/
