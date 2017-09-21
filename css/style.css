@@ -734,12 +734,17 @@ input[type="checkbox"].visually-hidden {
   }
 }
 
-.social-button svg:hover,
-.social-button svg:focus {
+.social-button:hover svg,
+.social-button:hover path,
+.social-button:focus svg,
+.social-button:focus path {
   fill: #ffffff;
+
+  outline: none;
 }
 
-.social-button svg:active {
+.social-button:active svg,
+.social-button:active path {
   fill: #86e5c9;
 }
 
