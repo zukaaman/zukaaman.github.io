@@ -719,16 +719,17 @@ input[type="checkbox"].visually-hidden {
 
 @media (max-width: 425px) {
   .footer-social-list {
+    justify-content: space-around;
     margin-bottom: 0.5em;
   }
 }
 
-.social-button {
-  margin-right: 20%;
+.footer-social-list-item {
+  margin-right: 2%;
 }
 
 @media (max-width: 425px) {
-  .footer-social-list-item:last-child a {
+  .footer-social-list-item:last-child {
     margin-right: 0;
   }
 }
