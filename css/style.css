@@ -373,6 +373,10 @@ input[type="checkbox"].visually-hidden {
   overflow: hidden;
 }
 
+.portfolio-list-item.apollo {
+  background-image: url("../img/apollo.jpg");
+}
+
 @media (max-width: 768px){
   .portfolio-list-item {
     width: 49%;
@@ -401,7 +405,7 @@ input[type="checkbox"].visually-hidden {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   height: 250px;
   padding: 1em 2% 0 2%;
@@ -411,7 +415,7 @@ input[type="checkbox"].visually-hidden {
   background-color: rgba(39, 159, 124, 0.9);
 
   transition: transform 0.3s ease-in-out;
-  transform: translateX(-100%);
+  transform: translateX(-101%);
 }
 
 .details h3 {
@@ -433,7 +437,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .details a {
-  margin: 0 5%;
+  margin: 0 5% 1em 5%;
   padding: 0.9em 1.8em;
 
   color: #ffffff;
