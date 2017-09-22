@@ -1,14 +1,12 @@
 $(document).on('submit', '#main-form', function(e) {
     e.preventDefault();
-    var replyto = $('input[name=_replyto]'),
+    var replyto = $('input[name=email]'),
         replyto_text = replyto.val(),
-        subject = $('input[name=_subject]'),
-        subject_text = subject.val(),
-        body = $('textarea[name=body]'),
+        body = $('textarea[name=text]'),
         body_text = body.val();
 
     $.ajax({
-        url: "https://formspree.io/addr@example.com",
+        url: "https://formspree.io/zukaaman@gmail.com",
         method: "POST",
         data: {
             _replyto: replyto_text,

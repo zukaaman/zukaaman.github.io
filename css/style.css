@@ -495,8 +495,6 @@ input[type="checkbox"].visually-hidden {
 .reviews-list li {
   width: 32%;
   margin-right: 2%;
-
-  background-color: grey;
 }
 
 @media (max-width: 768px) {
