@@ -159,15 +159,15 @@
             <h3>Я обязательно Вам отвечу!</h3>
             <form class="main-form" id="main-form" action="https://formspree.io/zukaaman@gmail.com" method="post">
               <p>
-                <label class="visually-hidden" for="name">Ваше имя?</label>
-                <input type="text" name="name" placeholder="Ваше имя?" required>
+                <label for="name"><span class="visually-hidden">Ваше имя?</span></label>
+                <input id="name" type="text" name="name" placeholder="Ваше имя?" required>
               </p>
               <p>
-                <label class="visually-hidden" for="email">Ваша почта?</label>
+                <label for="email"><span class="visually-hidden">Ваша почта?</span></label>
                 <input id="email" type="email" name="email" placeholder="Ваша почта?" required>
               </p>
               <p>
-                <label class="visually-hidden" for="text">Ваша проблема</label>
+                <label for="text"><span class="visually-hidden">Ваша проблема</span></label>
                 <textarea id="text" name="text" rows="4" placeholder="Опишите, пожалуйста, Вашу проблему..." required></textarea>
               </p>
               <button class="button" type="submit" value="send">Отправить</button>
@@ -197,6 +197,7 @@
 
     <script src="js/toggle.js"></script>
     <script src="js/form.js"></script>
+    <script src="js/scrolling.js"></script>
 
   </body>
 </html>
