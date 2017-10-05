@@ -254,6 +254,16 @@ input[type="checkbox"].visually-hidden {
   transform: translateX(0.7em);
 }
 
+.scrolling-top {
+  position: fixed;
+  right: 2%;
+  bottom: 10px;
+
+  display:none;
+
+  opacity: 0.7;
+}
+
 .first-wrapper {
   display: flex;
   margin-bottom: 5em;
@@ -728,6 +738,12 @@ input[type="checkbox"].visually-hidden {
 
 .footer-social-list-item {
   margin-right: 2%;
+}
+
+@media (max-width: 425px) {
+  .footer-social-list-item {
+    margin-right: 1%;
+  }
 }
 
 @media (max-width: 425px) {

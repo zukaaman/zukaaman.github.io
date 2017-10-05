@@ -21,3 +21,11 @@ for (var i = 0; i < linkNav.length; i++) {
         }
     }, false);
 }
+
+window.onscroll = function() {
+  if(window.pageYOffset>300) {
+    document.querySelector(".scrolling-top").style.display="block";
+  } else {
+    document.querySelector(".scrolling-top").style.display="none";
+  }
+}
