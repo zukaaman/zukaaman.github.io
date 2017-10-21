@@ -23,5 +23,12 @@
     "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1",
     "rimraf": "^2.6.2"
+  },
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
