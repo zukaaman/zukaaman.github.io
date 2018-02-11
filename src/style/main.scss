@@ -1,6 +1,21 @@
 /*
 * Custom
 */
-@import "partials/normalize.scss";
+
+@import "../../node_modules/normalize.css/normalize";
 
 @import "partials/style.scss";
+
+@import "partials/body.scss";
+
+@import "partials/header.scss";
+
+@import "partials/greeting.scss";
+
+@import "partials/portfolio.scss";
+
+@import "partials/footer.scss";
+
+@import "partials/canvas.scss";
+
+@import "../../node_modules/slick-carousel/slick/slick.scss";

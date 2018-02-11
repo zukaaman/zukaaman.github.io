@@ -1,0 +1,20 @@
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.main-slider {
+  height: 100vh;
+
+  .slick-list {
+    height: 100vh !important;
+  }
+
+  .slick-slide {
+    height: 100vh !important;
+  }
+}

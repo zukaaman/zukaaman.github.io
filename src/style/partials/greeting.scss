@@ -1,0 +1,44 @@
+.greeting {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+
+  box-sizing: border-box;
+
+  width: 100%;
+
+  text-align: center;
+}
+
+@media (max-width: 768px){
+  .greeting {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.greeting h3 {
+  margin: 0;
+  margin-top: 43vh;
+
+  font-size: 3em;
+  font-weight: 300;
+  color: #575757;
+}
+
+@media (max-width: 425px){
+  .greeting h3 {
+    margin-top: 1em;
+
+    font-size: 2em;
+  }
+}
+
+.greeting p {
+  margin: 0;
+  padding-top: 0.5em;
+
+  font-size: 1.1em;
+  line-height: 1.8em;
+  color: #8e8e8e;
+}

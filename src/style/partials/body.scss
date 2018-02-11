@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  color: #3a494c;
+
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAI0lEQVQIW2NkwAT/GdHE/gP5jMiCYAGQIpggXAAmiCIAEgQAAE4FBbECyZcAAAAASUVORK5CYII=) #222;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checked"].visually-hidden,
+input[type="radio"].visually-hidden,
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+
+  box-sizing: border-box;
+  max-width: 1200px;
+  min-width: 768px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+@media (max-width: 768px){
+  .container {
+    max-width: 768px;
+    min-width: 426px;
+  }
+}
+
+@media (max-width: 425px){
+  .container {
+    max-width: 425px;
+    min-width: 0;
+  }
+}
