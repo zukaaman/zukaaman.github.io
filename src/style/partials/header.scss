@@ -2,6 +2,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 10;
 
   width: 100%;
 }
@@ -121,14 +122,18 @@
 
 .site-navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  min-width: 50%;
+  min-width: 22%;
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  li:first-child {
+    margin-right: 10%;
+  }
 }
 
 @keyframes move {
