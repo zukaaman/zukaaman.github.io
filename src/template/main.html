@@ -2,17 +2,70 @@
 
   <canvas id="canvas"></canvas>
 
-  <div class="main-slider  container">
+  <div id="fullpage">
 
-    <div class="greeting">
-      <h2 class="visually-hidden">Обо мне</h2>
+    <div class="greeting  section  container" id="firstPage">
+      <h2 class="visually-hidden">Как меня зовут?</h2>
 
       <h3>Привет, меня зовут Константин<br> и я верстаю сайты</h3>
 
       <p>html - css - js</p>
     </div>
 
-    <div class="portfolio" id="portfolio">
+    <div class="portfolio  section" id="portfolio">
+      <div class="container">
+        <h2 class="">Мое портфолио</h2>
+      </div>
+
+      <div class="slide">
+        <div class="container">
+          <h3>111</h3>
+          <img src="" width="300" height="300" alt="#">
+        </div>
+      </div>
+      <div class="slide"> Слайд 2 </div>
+      <div class="slide"> Слайд 3 </div>
+      <div class="slide"> Слайд 4 </div>
+
+    </div>
+
+    <div class="contacts  section  fp-auto-height" id="contacts">
+
+      <div class="container">
+        <h2>Контакты</h2>
+
+        <section class="about">
+          <h3>Еще несколько слов</h3>
+
+          <p>Пишу чистый и валидный код. Сверстанные мною сайты выглядят одинаково во всех современных браузерах. Нюансы верстки под версии IE обсуждаются отдельно.</p>
+
+          <p>Для связи со мной Вы можете использовать социальные сети и мессенджеры, либо воспользоваться формой обратной связи.</p>
+        </section>
+
+        <section class="form">
+          <h2 class="visually-hidden">Форма для связи со мной</h2>
+
+          <h3>Я обязательно Вам отвечу!</h3>
+          <form class="main-form" id="main-form" action="https://formspree.io/zukaaman@gmail.com" method="post">
+            <p>
+              <label for="name"><span class="visually-hidden">Ваше имя?</span></label>
+              <input id="name" type="text" name="name" placeholder="Ваше имя?" required="">
+            </p>
+            <p>
+              <label for="email"><span class="visually-hidden">Ваша почта?</span></label>
+              <input id="email" type="email" name="email" placeholder="Ваша почта?" required="">
+            </p>
+            <p>
+              <label for="text"><span class="visually-hidden">Ваша проблема</span></label>
+              <textarea id="text" name="text" rows="4" placeholder="Опишите, пожалуйста, Вашу проблему..." required=""></textarea>
+            </p>
+            <button class="button" type="submit" value="send">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <!-- <div class="portfolio" id="portfolio">
       <h2>Последние работы</h2>
 
       <ul class="portfolio-list">
@@ -59,7 +112,7 @@
           </div>
         </li>
       </ul>
-    </div>
+    </div> -->
 
   </div>
 

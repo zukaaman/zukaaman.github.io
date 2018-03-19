@@ -16,4 +16,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 //= partials/form.js
 
 //= ../../node_modules/slick-carousel/slick/slick.js
+
+//= ../../node_modules/fullpage.js/dist/jquery.fullpage.js
+
+//= partials/fullpage.js
 });

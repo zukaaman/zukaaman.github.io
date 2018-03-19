@@ -9,8 +9,10 @@ function Particles(){
   //particle colors
   this.colors = [
     '255, 255, 255',
-    '255, 99, 71',
-    '19, 19, 19'
+    // '255, 99, 71'
+    '31, 101, 81',
+    // '19, 19, 19'
+    '58, 73, 76'
   ]
   //adds gradient to particles on true
   this.blurry = true;

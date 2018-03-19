@@ -19,7 +19,6 @@
 
 .greeting h3 {
   margin: 0;
-  margin-top: 43vh;
 
   font-size: 3em;
   font-weight: 300;
@@ -30,8 +29,6 @@
 
 @media (max-width: 425px){
   .greeting h3 {
-    margin-top: 1em;
-
     font-size: 2em;
   }
 }

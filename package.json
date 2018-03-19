@@ -4,7 +4,9 @@
   "description": "Description",
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "fullpage.js": "^2.9.6"
+  },
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",

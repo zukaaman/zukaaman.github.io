@@ -1,10 +1,15 @@
 .main-footer {
   // padding-top: 3em;
-  margin-top: -60px;
+  // margin-top: -60px;
 
   color: #ffffff;
 
   // background-color: #279f7c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
 }
 
 .footer-top {
@@ -31,6 +36,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1vh 0;
   // padding-top: 2.5em;
   // padding-bottom: 2.5em;
 
