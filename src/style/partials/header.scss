@@ -18,6 +18,30 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+  }
+
+  li:first-child {
+    flex-grow: 1;
+    margin-left: 0;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  a {
+    color: white;
+    line-height: 34px;
+  }
 }
 
 .main-header-logo {
