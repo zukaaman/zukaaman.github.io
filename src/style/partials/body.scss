@@ -2,10 +2,10 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", Arial, sans-serif;
-  color: #3a494c;
+  font-family: $font;
+  color: $color2;
 
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAI0lEQVQIW2NkwAT/GdHE/gP5jMiCYAGQIpggXAAmiCIAEgQAAE4FBbECyZcAAAAASUVORK5CYII=) #222;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAI0lEQVQIW2NkwAT/GdHE/gP5jMiCYAGQIpggXAAmiCIAEgQAAE4FBbECyZcAAAAASUVORK5CYII=) $color2;
 }
 
 a {
@@ -42,16 +42,3 @@ input[type="checkbox"].visually-hidden {
   margin: 0 auto;
 }
 
-@media (max-width: 768px){
-  .container {
-    max-width: 768px;
-    min-width: 426px;
-  }
-}
-
-@media (max-width: 425px){
-  .container {
-    max-width: 425px;
-    min-width: 0;
-  }
-}

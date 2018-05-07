@@ -4,9 +4,9 @@
 
 @import "../../node_modules/normalize.css/normalize";
 
-@import "partials/var.scss";
+@import "partials/canvas.scss";
 
-@import "partials/style.scss";
+@import "partials/var.scss";
 
 @import "partials/body.scss";
 
@@ -19,7 +19,5 @@
 @import "partials/contacts.scss";
 
 @import "partials/footer.scss";
-
-@import "partials/canvas.scss";
 
 @import "../../node_modules/fullpage.js/dist/jquery.fullpage.scss";

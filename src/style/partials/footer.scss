@@ -1,57 +1,21 @@
-.main-footer {
-  // padding-top: 3em;
-  // margin-top: -60px;
-
-  color: #ffffff;
-
-  // background-color: #279f7c;
+.footer {
   position: absolute;
   bottom: 0;
   left: 0;
 
   width: 100%;
-}
 
-.footer-top {
-  display: flex;
-  margin-bottom: 2em;
-}
+  color: $color1;
 
-@media (max-width: 768px) {
-  .footer-top {
-    flex-direction: column;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 0;
   }
 }
 
-.footer-top h2,
-.footer-top h3 {
-  margin: 0;
-  margin-bottom:  1em;
-
-  font-size: 2em;
-  font-weight: 300;
-  color: #ffffff;
-}
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1vh 0;
-  // padding-top: 2.5em;
-  // padding-bottom: 2.5em;
-
-  // border-top: 1px solid #ffffff;
-}
-
-@media (max-width: 425px) {
-  .footer-bottom {
-    flex-direction: column;
-
-    padding: 1.5em 0;
-  }
-}
-
-.footer-social-list {
+.footer__social-list {
   display: flex;
 
   margin: 0;
@@ -60,46 +24,41 @@
   list-style: none;
 }
 
-@media (max-width: 425px) {
-  .footer-social-list {
-    justify-content: space-around;
-    margin-bottom: 0.5em;
-  }
-}
-
-.footer-social-list-item {
+.footer__social-list-item {
   margin-right: 10%;
 }
 
-@media (max-width: 425px) {
-  .footer-social-list-item {
-    margin-right: 1%;
+.social__button {
+
+  svg,
+  path {
+    fill: $color1;
+  }
+
+  &:hover {
+    svg,
+    path {
+      fill: $color2;
+
+      outline: none;
+    }
+  }
+
+  &:active {
+
+    svg,
+    path {
+      fill: $color1;
+    }
   }
 }
 
-@media (max-width: 425px) {
-  .footer-social-list-item:last-child {
-    margin-right: 0;
+.footer__copyright {
+
+  p {
+    margin: 0;
+
+    font-size: 1.1em;
+    color: $color1;
   }
-}
-
-.social-button:hover svg,
-.social-button:hover path,
-.social-button:focus svg,
-.social-button:focus path {
-  fill: #ffffff;
-
-  outline: none;
-}
-
-.social-button:active svg,
-.social-button:active path {
-  fill: #86e5c9;
-}
-
-.footer-copyright p {
-  margin: 0;
-
-  font-size: 1.1em;
-  color: #3a494c;
 }

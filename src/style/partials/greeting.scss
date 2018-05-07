@@ -1,20 +1,9 @@
 .greeting {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-
-  box-sizing: border-box;
-
   width: 100%;
 
   text-align: center;
-}
 
-@media (max-width: 768px){
-  .greeting {
-    width: 100%;
-    margin-right: 0;
-  }
+  box-sizing: border-box;
 }
 
 .greeting h3 {
@@ -22,15 +11,9 @@
 
   font-size: 3em;
   font-weight: 300;
-  color: #575757;
+  color: $color1;
 
   text-shadow: 2px 5px 15px black;
-}
-
-@media (max-width: 425px){
-  .greeting h3 {
-    font-size: 2em;
-  }
 }
 
 .greeting p {
@@ -39,5 +22,5 @@
 
   font-size: 1.1em;
   line-height: 1.8em;
-  color: #8e8e8e;
+  color: $color1;
 }
