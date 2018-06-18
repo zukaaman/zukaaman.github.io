@@ -4,6 +4,18 @@
   text-align: center;
 
   box-sizing: border-box;
+
+  a {
+    position: absolute;
+    bottom: 64px;
+    left: calc((100% - 52px) / 2);
+
+    cursor: pointer;
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 .greeting h3 {

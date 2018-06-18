@@ -8,11 +8,11 @@
 function Particles(){
   //particle colors
   this.colors = [
-    '255, 255, 255',
+    '38, 114, 87',
     // '255, 99, 71'
-    '31, 101, 81',
-    // '19, 19, 19'
-    '58, 73, 76'
+    '170, 143, 57',
+     '120, 40, 107'
+    //'58, 73, 76'
   ]
   //adds gradient to particles on true
   this.blurry = true;
@@ -121,7 +121,7 @@ Particles.prototype.draw = function(particle, i){
   }
 
   if (self.border === true) {
-    ctx.strokeStyle = '#fff';
+    ctx.strokeStyle = '#000';
     ctx.stroke();
   }
 
